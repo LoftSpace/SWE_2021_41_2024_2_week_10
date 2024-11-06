@@ -13,11 +13,17 @@ def sum_of_squares_of_even(even_int_list: List[int]) -> int:
     Args:        even_int_list: A list of even integers.    
     Returns:        The sum of the squares of all even numbers in the lisAssignment3    
     """   
+    Sum = 0
+    for i in even_int_list:
+        Sum += i * i
+    return Sum
 # TODO: Implement sum_of_squares_of_even    pass# Main function
 def main():    
 # Example list    
     int_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    
-    even_int_list = even_list(int_list)    
+    #even_int_list = even_list(int_list)  
+    even_int_list = int_list  
+    print(even_int_list)
     output = sum_of_squares_of_even(even_int_list)    
     print(output)
 
