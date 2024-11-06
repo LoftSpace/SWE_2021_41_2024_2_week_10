@@ -21,9 +21,7 @@ def sum_of_squares_of_even(even_int_list: List[int]) -> int:
 def main():    
 # Example list    
     int_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    
-    #even_int_list = even_list(int_list)  
-    even_int_list = int_list  
-    print(even_int_list)
+    even_int_list = even_list(int_list)  
     output = sum_of_squares_of_even(even_int_list)    
     print(output)
 
